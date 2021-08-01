@@ -19,11 +19,11 @@ jobs:
       - name: Build neuron site 🔧
         run: |
           neuron --version
-          neuron -d doc/ gen --pretty-urls
+          neuron gen --pretty-urls
       - name: Deploy to GitHub Pages 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: doc/.neuron/output
+          FOLDER: .neuron/output
           CLEAN: true
