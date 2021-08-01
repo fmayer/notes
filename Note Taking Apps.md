@@ -1,4 +1,4 @@
-# Note Taking Apps
+# Note Taking [[Apps]]
 
 + Foam for VSCode
 + Obsidian
